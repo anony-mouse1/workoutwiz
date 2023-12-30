@@ -1,0 +1,4 @@
+opencv-python-headless>=3.4.2
+mediapipe>=0.8.6
+streamlit-webrtc~=0.45.0
+twilio~=8.1.0
