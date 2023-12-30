@@ -20,7 +20,6 @@ def get_ice_servers():
         
         account_sid = st.secrets.db_credentials.user
         auth_token = st.secrets.db_credentials.password
-        print(account_sid, auth_token)
     except KeyError:
         logger.warning(
             "Twilio credentials are not set. Fallback to a free STUN server from Google."  # noqa: E501
