@@ -63,7 +63,7 @@ class Tokyo2020PictogramVideoProcessor(VideoProcessorBase):
         # display_fps = self._cvFpsCalc.get()
 
         image = frame.to_ndarray(format="bgr24")
-        image = cv.flip(image, 1)  # Mirror display
+        image = cv.flip(image, 1)  # Mirrors image
         image = copy.deepcopy(image) #just copies the image so the original image will stay unaffected
         
         image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
